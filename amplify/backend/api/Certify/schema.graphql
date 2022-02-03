@@ -1,0 +1,50 @@
+type CertificateTypes @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+}
+
+type FileToUser @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  FileKey: String
+  UserID: String
+}
+
+enum AccessLevel {
+  EMPLOYEE
+  CLIENT
+  COMPANY
+}
+
+type Certificates @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+  IssueDate: String
+  ExpiryDate: String
+  User: String
+  Link: String
+  key: String
+}
+
+type Files @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+  Comment: String
+  Link: String
+  key: String
+  Department: String
+}
+
+type Users @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+  Department: String
+  Access: AccessLevel
+  Email: String
+  Password: String
+}
+
+type Departments @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+}
+ 

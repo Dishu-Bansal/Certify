@@ -1,0 +1,16 @@
+{
+  "resourceName": "s3certifystoraged1cuhhl5e513p9",
+  "bucketName": "certify-storage-d1cuhhl5e513p9",
+  "policyUUID": "24a491ac",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ",
+    "CREATE_AND_UPDATE",
+    "DELETE"
+  ],
+  "authAccess": [
+    "READ",
+    "CREATE_AND_UPDATE",
+    "DELETE"
+  ]
+}
